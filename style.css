@@ -15,8 +15,23 @@
   scroll-behavior: smooth;
 }
 
+/**Font size setting*/
 p {
   font-size: 1.5vw;
+}
+
+h1 {
+  font-size: 4vw;
+  text-decoration: none;
+  margin: 1vw 0;
+}
+
+/**Page elements setup*/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -63,21 +78,17 @@ nav div {
 
 /**Header*/
 /*#region*/
-header {
-  width: 100%;
+#home-header {
   height: 90vh;
   position: absolute;
   top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url("https://source.unsplash.com/oMpAz-DN-9I");
   aspect-ratio: 1.78;
   background-position: center;
   background-size: cover;
 }
 
-header p {
+#home-header h1 {
   font-size: 5vw;
   width: 50%;
   text-align: center;
@@ -87,7 +98,7 @@ header p {
 
 /**Home*/
 /*#region*/
-#home {
+#home-main {
   position: relative;
   top: 90vh;
 }
@@ -98,13 +109,6 @@ header p {
   padding-bottom: 7vh;
   display: flex;
   flex-direction: column;
-}
-
-#contact h1 {
-  font-size: 3vw;
-  width: 50%;
-  text-decoration: none;
-  font-weight: normal;
 }
 
 #contact iframe {
@@ -124,14 +128,6 @@ header p {
   padding-bottom: 7vh;
   display: flex;
   flex-direction: column;
-}
-
-#join h1,
-#members h1 {
-  font-size: 3vw;
-  width: 50%;
-  text-decoration: none;
-  font-weight: normal;
 }
 
 #members .grid-container {
@@ -163,12 +159,17 @@ header p {
 
 /**Events*/
 /*#region*/
-#events {
+#events-main {
   width: 100%;
   height: fit-content;
 }
 
-#events article {
+#events-main h1 {
+  width: 100%;
+  text-align: center;
+}
+
+#events-main article {
   height: 50vh;
   width: 55vw;
   background-color: #1d2946;
@@ -178,18 +179,18 @@ header p {
   flex-direction: column;
 }
 
-#events article:last-child {
+#events-main article:last-child {
   margin-bottom: 10vh;
 }
 
-#events h1 {
+#events-main article h2 {
   font-size: 3vw;
   color: #fff;
   align-self: center;
   margin: 1vw;
 }
 
-#events .dates,
+#events-main .dates,
 .location {
   margin: 0.5vw;
   font-size: 1vw;
@@ -197,7 +198,7 @@ header p {
   align-self: center;
 }
 
-#events .content {
+#events-main .content {
   color: #fff;
   width: 100%;
   align-self: flex-start;
@@ -210,12 +211,12 @@ header p {
   justify-content: space-between;
 }
 
-#events .content p {
+#events-main .content p {
   width: 60%;
   font-size: 1vw;
 }
 
-#events .content img {
+#events-main .content img {
   width: 12vw;
   height: 12vw;
   border-radius: 50px;
